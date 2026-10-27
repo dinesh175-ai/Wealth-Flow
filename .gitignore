@@ -11,5 +11,5 @@ build/
 *.db
 *.sqlite
 *.sqlite3
-backend/data/*.csv
+# backend/data/*.csv
 .DS_Store
