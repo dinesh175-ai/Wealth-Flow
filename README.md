@@ -39,8 +39,6 @@ cd frontend
 npm install
 npm run dev
 ```
-Open http://localhost:5173
-
 ## Column names
 The code finds columns by common names (see `COLUMN_ALIASES` in `rules.py`).
 Open `http://localhost:8000/api/schema` to see what was detected, then edit the aliases to match your CSV.
