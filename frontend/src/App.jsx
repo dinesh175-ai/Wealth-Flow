@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 
-const API = "https://wealthflow-query-console.onrender.com";
+const API = "http://127.0.0.1:8000";
 
 const SAMPLES = [
   "How many aged breaks are there?",
@@ -118,7 +118,7 @@ export default function App() {
 
       const items = Array.isArray(data)
         ? data
-        : data.history || data.items || [];
+        : data.value || data.history || data.items || [];
 
       setHistory(items);
     } catch (err) {
@@ -463,3 +463,4 @@ export default function App() {
     </div>
   );
 }
+
