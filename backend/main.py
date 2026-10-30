@@ -1,4 +1,4 @@
-
+﻿
 import os
 
 from dotenv import load_dotenv
@@ -126,7 +126,7 @@ def ask(body: Ask):
             res = answer_question(rewritten, body.role)
             res["interpreted_question"] = rewritten
 
-        res["notes"] = knowledge.retrieve(question)
+        res["notes"] = knowledge.retrieve(question, body.role)
 
         db.log_history(
             body.role,
@@ -177,3 +177,4 @@ def schema():
         "columns": db.columns(),
         "detected": detect(),
     }
+

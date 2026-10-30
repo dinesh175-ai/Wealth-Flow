@@ -13,3 +13,24 @@ frontend
 cd "D:\wealthflow-query-console\wealthflow-query-console\frontend"
 
 npm.cmd run dev
+
+
+how to push git commands
+
+
+***
+cd "D:\wealthflow-query-console\wealthflow-query-console"
+
+git status
+
+git add .
+
+git commit -m "Update WealthFlow Query Console frontend and backend"
+
+git push origin main
+
+*****
+git status
+git check-ignore backend/.env
+
+
